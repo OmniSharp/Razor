@@ -603,8 +603,6 @@ public class AllTagHelper : {typeof(TagHelper).FullName}
 
                 b.Features.Add(GetMetadataReferenceFeature(references));
                 b.Features.Add(new CompilationTagHelperFeature());
-                b.Features.Add(new DefaultTagHelperDescriptorProvider() { DesignTime = true });
-                b.Features.Add(new ViewComponentTagHelperDescriptorProvider() { ForceEnabled = true });
             });
         }
 
@@ -616,8 +614,6 @@ public class AllTagHelper : {typeof(TagHelper).FullName}
 
                 b.Features.Add(GetMetadataReferenceFeature(references));
                 b.Features.Add(new CompilationTagHelperFeature());
-                b.Features.Add(new DefaultTagHelperDescriptorProvider() { DesignTime = true });
-                b.Features.Add(new ViewComponentTagHelperDescriptorProvider() { ForceEnabled = true });
             });
         }
 

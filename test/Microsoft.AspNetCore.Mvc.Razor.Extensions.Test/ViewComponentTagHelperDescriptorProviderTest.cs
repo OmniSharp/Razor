@@ -35,7 +35,6 @@ namespace Microsoft.AspNetCore.Mvc.Razor.Extensions
             var provider = new ViewComponentTagHelperDescriptorProvider()
             {
                 Engine = RazorEngine.CreateEmpty(b => { }),
-                ForceEnabled = true,
             };
 
             var expectedDescriptor = TagHelperDescriptorBuilder.Create(
